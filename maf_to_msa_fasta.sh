@@ -59,8 +59,5 @@ do
   rm_fasta=./analyses/last/msa_fasta/"$ref_chr"_rm.fa
   $msa_view $maf_file -f -G 1 --refseq $ref_rm_chr > $fasta
   sed -E 's/> />/g' $fasta > "$fasta"_tmp && mv "$fasta"_tmp $fasta
-  perl $path_to_match_masking \
-  --ref $ref_rm_chr \
-  --fasta $fasta \
-  --out $rm_fasta
+  perl $path_to_match_masking --ref $ref_rm_chr --fasta $fasta --out $rm_fasta
 done
