@@ -47,7 +47,7 @@ mkdir -p ./data/sequences/ref/split/
 
 faSplit byname $ref_rm ./data/sequences/ref/split/
 
-path_to_match_masking= ./gerp/scripts-alignment/matchMasking.pl
+path_to_match_masking=./gerp/scripts-alignment/matchMasking.pl
 
 for maf_file in "${maf_dir[@]}"
 do
